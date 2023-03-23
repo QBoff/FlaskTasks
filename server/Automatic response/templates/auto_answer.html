@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for k, v in dictForAnswer.items() %}
+        <p>{{ k }} - {{ v }}</p>
+    {% endfor %}
+{% endblock %}
