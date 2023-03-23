@@ -16,6 +16,7 @@ def showListProf(typeOfList):
 
 
 @app.route('/answer')
+@app.route('/auto_answer')
 def showPersonAnswer():
     dictForAnswer = {
         "title": "Watny",
