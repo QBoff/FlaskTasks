@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h2>Размещение по каютам</h2>
+
+    {% for i, astronaut in list_of_astronautes %}
+        {% if astronaut[1].lower() == "капитан корабля" %}
+            <p>{{ astronaut[0] }} - Каюта №{{i + 1}} - {{astronaut[1].lower()}}</p>
+        {% else %}
+            <p>{{ astronaut[0] }} - Каюта №{{i + 1}}</p>
+        {% endif %}
+    {% endfor %}
+
+{% endblock %}
