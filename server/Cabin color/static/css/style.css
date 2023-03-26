@@ -1,0 +1,41 @@
+body {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider {
+    display: flex;
+    width: 800px;
+    overflow-x: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.color {
+    width: 50%;
+}
+
+.image-block {
+    width: 50%;
+}
+
+.color-block-less-21-female {
+    background-color: blueviolet;
+    
+}
+
+.color-block-more-than-21-female {
+    background-color: darkmagenta;
+   
+}
+
+.color-block-less-21-male {
+    background-color: firebrick;
+   
+}
+
+.color-block-more-than-21-male {
+    background-color: indigo;
+}

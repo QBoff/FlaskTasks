@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    
+    <form action="" method="POST" novalidate>
+        {{form.hidden_tag()}}
+
+        <div class="name user-id">
+            <p class="formlabel">{{form.user_name.label}}</p>
+            {{form.user_name(class="form-control")}}
+            
+            {% for error in form.user_name.errors %}
+                <div class="error-show">{{error}}</div>
+            {% endfor %}
+
+        </div>
+
+        <div class="name user-password">
+            <p class="formlabel">{{form.user_password.label}}</p>
+            {{form.user_password(class="form-control")}}
+            
+            {% for error in form.user_password.errors %}
+                <div class="error-show">{{error}}</div>
+            {% endfor %}
+
+        </div>
+
+        <div class="captain-id">
+            <p>{{form.captain_id.label}}</p>
+            {{ form.captain_id(class="form-control") }}
+
+            {% for error in form.captain_id.errors %}
+                <div class="error-show">{{error}}</div>
+            {% endfor %}
+        </div>
+
+        <div class="captain-password">
+            <p>{{form.captain_password.label}}</p>
+            {{ form.captain_password(class="form-control") }}
+
+            {% for error in form.captain_password.errors %}
+                <div class="error-show">{{error}}</div>
+            {% endfor %}
+        </div>
+        {{ form.submit(type='submit', class="submit-btn") }}
+    </form>
+
+{% endblock %}

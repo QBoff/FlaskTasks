@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% if sex == "female" %}
+
+        {% if age <= 21 %}
+            <div class="slider">
+                <div class="color color-block-less-21-female"></div>
+                <div class="image-block">
+                    <img src="https://pustunchik.ua/uploads/creation/1ef3871f65f1ab1d73aaf6081cd3b551.jpg" alt="">
+                </div>
+            </div>
+        {% else %}
+            <div class="slider">
+                <div class="color color-block-more-than-21-female"></div>
+                <div class="image-block">
+                    <img src="https://nochdobra.com/wp-content/uploads/2020/01/6953_900.png" alt="">
+                </div>
+            </div>
+        {% endif %}
+    
+    {% elif sex == "male" %}
+
+        {% if age <= 21 %}
+            <div class="slider">
+                <div class="color color-block-less-21-male"></div>
+                <div class="image-block">
+                    <img src="https://moyamamma.ru/wp-content/uploads/2020/07/risunok-dlya-detey-inoplanetyanin_12.jpg" alt="">
+                </div>
+            </div>
+        {% else %}
+            <div class="slider">
+                <div class="color color-block-more-than-21-male"></div>
+                <div class="image-block">
+                    <img src="https://kartinkof.club/uploads/posts/2022-05/1653678540_19-kartinkof-club-p-veselie-inoplanetyane-kartinki-20.png" alt="">
+                </div>
+            </div>
+        {% endif %}
+    
+    {% endif %}
+
+{% endblock %}
